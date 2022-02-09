@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:fillViewport="true"
+    tools:context=".fave_cart.favorite"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/blue"
+            android:id="@+id/circle"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/sumback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/back_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Order Summery"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/white"
+            android:layout_below="@+id/circle"
+            android:id="@+id/sum"
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="# Items"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="60dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="80dp"
+                android:text="To Pay: "
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="R "
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deltaRelative"
+            android:background="@color/white"
+            android:layout_below="@id/sum"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/lightGrey"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="ORDER OVERVIEW" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Delivery Method\nDelivery"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView8"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="CHANGE"
+                android:textColor="@color/teal_700"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/dot2"
+                android:layout_below="@id/textView9"
+                android:layout_marginTop="10dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dot2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Delivery Address"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView10"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="33 Melle street, Braam, Johannesburg\nSouth Africa"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/change2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView11"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="CHANGE"
+                android:textColor="@color/teal_700"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dynaLay"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_below="@+id/deltaRelative"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/complete"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight=".1"
+                android:background="#397C0C"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Proceed To Checkout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight=".1"
+                android:background="#FF0000"
+                android:text="Discard"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

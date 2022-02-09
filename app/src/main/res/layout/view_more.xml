@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="3dp"
+    android:id="@+id/item_box"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/vm_itemname"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/macbook_air_13_inch_apple_m1_chip_256gb_gold"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/AddToCart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@mipmap/ic_add_cart" />
+
+    <ImageView
+        android:id="@+id/vm_img_item"
+        android:layout_width="166dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/item_image"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/vm_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/r_13_000"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

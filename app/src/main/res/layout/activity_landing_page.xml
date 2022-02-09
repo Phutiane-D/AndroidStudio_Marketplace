@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    tools:context=".LandingPage.LandingPage">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue">
+
+        <ImageButton
+            android:id="@+id/btn_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="#06042E"
+            android:contentDescription="@string/categories_drawbar"
+            android:onClick="showPopup"
+            app:srcCompat="@drawable/yellow_categories"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:src="@drawable/ic_baseline_login_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:contentDescription="@string/logo"
+                app:srcCompat="@drawable/wits" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/logo"
+                app:srcCompat="@drawable/marketplace" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight=".85"
+                    android:background="@drawable/rectangle4"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:hint="@string/search_for_products_brands"
+                    android:importantForAutofill="no"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/lbl_books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/books"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vm_books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:elevation="4dp"
+                    android:outlineProvider="bounds"
+                    android:shadowColor="@color/black"
+                    android:text="@string/view_more"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="226dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="225dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_books"
+                            android:layout_width="wrap_content"
+                            android:layout_height="237dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="290dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lbl_computers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/computer_amp_electronics"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vm_computers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:elevation="50dp"
+                    android:shadowColor="@color/black"
+                    android:text="@string/view_more"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_computers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="580dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/lbl_clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/clothes"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vm_clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:elevation="50dp"
+                    android:shadowColor="@color/black"
+                    android:text="@string/view_more"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="54dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_clothes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="237dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="860dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/lbl_hygiene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/health_amp_hygiene"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vm_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:elevation="50dp"
+                    android:shadowColor="@color/black"
+                    android:text="@string/view_more"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_health"
+                            android:layout_width="wrap_content"
+                            android:layout_height="237dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1148dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/lbl_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/sports"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vm_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:elevation="5dp"
+                    android:shadowColor="@color/black"
+                    android:text="@string/view_more"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginStart="-7dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_sports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="237dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation" />
+
+
+</RelativeLayout>

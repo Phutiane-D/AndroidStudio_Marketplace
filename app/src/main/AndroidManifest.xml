@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.witsmarketplace">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WitsMarketplace">
+        <activity
+            android:name=".ProfilePage.Profile"
+            android:exported="true" />
+        <activity
+            android:name=".OrderHistory.Orders"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fave_cart.cart"
+            android:exported="true" />
+        <activity
+            android:name=".fave_cart.favorite"
+            android:exported="true" />
+        <activity
+            android:name=".fave_cart.Summery"
+            android:exported="true" />
+        <activity
+            android:name=".fave_cart.Address"
+            android:exported="true" />
+        <activity
+            android:name=".LandingPage.SearchResults"
+            android:exported="true" />
+        <activity
+            android:name=".LandingPage.Search"
+            android:exported="true" />
+        <activity
+            android:name=".ViewMore.ViewMore"
+            android:exported="true" />
+        <activity
+            android:name=".LandingPage.modal"
+            android:exported="true" />
+        <activity
+            android:name=".LandingPage.LandingPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderHistory.OrderHistory"
+            android:exported="true" />
+        <activity
+            android:name=".Account"
+            android:exported="true" />
+    </application>
+
+</manifest>

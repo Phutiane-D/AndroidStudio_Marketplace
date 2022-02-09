@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">WitsMarketplace</string>
+    <string name="help">help</string>
+    <string name="new_game">new game</string>
+    <string name="view_more">View More</string>
+    <string name="computer_amp_electronics"><![CDATA[Computer & Electronics]]></string>
+    <string name="search_for_products_brands"> Search… </string>
+    <string name="macbook_air_13_inch_apple_m1_chip_256gb_gold">MacBook Air 13-inch | Apple M1 chip | 256GB - Gold</string>
+    <string name="r_13_000">R 13 000</string>
+    <string name="item_image">Item Image</string>
+    <string name="search_button">Search Button</string>
+    <string name="nada">nada</string>
+    <string name="logo">Logo</string>
+    <string name="categories_drawbar">Categories Drawbar</string>
+    <string name="books">Books</string>
+    <string name="clothes">Clothes</string>
+    <string name="health_amp_hygiene"><![CDATA[Health & Hygiene]]></string>
+    <string name="sports">Sports</string>
+    <string name="username">Username</string>
+    <string name="welcome_to_wits_marketplace">Welcome to Wits MarketPlace</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up_here">Don\'t have an account? Sign Up here</string>
+    <string name="enter_marketplace">Enter MarketPlace</string>
+    <string name="view_more_search_bar">view more search bar</string>
+    <string name="view_more_cart">view more cart</string>
+    <string name="addFave">Add to \nFavorites</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ic_menu"
+        android:icon="@drawable/book_mobile"
+        app:showAsAction="always"
+        android:title="Categories"/>
+
+    <item android:id="@+id/books"
+        app:showAsAction="never"
+        android:title="Books">
+
+        <menu>
+            <item android:id="@+id/fiction"
+                app:showAsAction="never"
+                android:title="Fiction"/>
+
+            <item android:id="@+id/nonfiction"
+                app:showAsAction="never"
+                android:title="Non-Fiction"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/computers"
+        app:showAsAction="never"
+        android:title="Computers &amp; Electronics">
+
+        <menu>
+            <item android:id="@+id/phones"
+                app:showAsAction="never"
+                android:title="Phones"/>
+
+            <item android:id="@+id/monitors"
+                app:showAsAction="never"
+                android:title="Monitors"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/clothing"
+        app:showAsAction="never"
+        android:title="Clothing">
+
+        <menu>
+            <item android:id="@+id/women"
+                app:showAsAction="never"
+                android:title="Women's Clothing"/>
+
+            <item android:id="@+id/Men"
+                app:showAsAction="never"
+                android:title="Men's Clothing"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/health"
+        app:showAsAction="never"
+        android:title="Health &amp; Hygiene">
+
+        <menu>
+            <item android:id="@+id/hygiene"
+                app:showAsAction="never"
+                android:title="Hygiene"/>
+
+            <item android:id="@+id/bath"
+                app:showAsAction="never"
+                android:title="Bathing Products"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/sports"
+        app:showAsAction="never"
+        android:title="Sports &amp; Training">
+
+        <menu>
+            <item android:id="@+id/gym"
+                app:showAsAction="never"
+                android:title="Gym Clothes"/>
+
+            <item android:id="@+id/training"
+                app:showAsAction="never"
+                android:title="Training Equipment"/>
+        </menu>
+    </item>
+</menu>
+

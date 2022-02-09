@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="145dp"
+    android:layout_height="205dp"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:outlineSpotShadowColor="@color/black"
+    android:focusable="true"
+    android:layout_margin="5dp"
+    android:background="@color/cardview_light_background"
+    android:id="@+id/item_box">
+
+    <HorizontalScrollView
+        android:layout_width="163dp"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/txt_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macbook_air_13_inch_apple_m1_chip_256gb_gold"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginStart="1dp"/>
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/AddToCart"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="13dp"
+        android:background="@mipmap/ic_add_cart" />
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="133dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="79dp"
+        android:contentDescription="@string/item_image"
+        android:src="@drawable/laptop3" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="75dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/r_13_000"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:outlineSpotShadowColor="@color/black"
+    android:id="@+id/item_box2"
+    android:focusable="true"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemized"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/sum_itemImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/item_image"
+            android:src="@drawable/laptop3" />
+
+        <TextView
+            android:id="@+id/sum_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/sum_itemImg"
+            android:text="Product Name"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/sum_itemImg"
+            android:layout_below = "@+id/sum_itemname"
+            android:text="R 100"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

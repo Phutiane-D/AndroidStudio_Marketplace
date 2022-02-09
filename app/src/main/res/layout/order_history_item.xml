@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderTab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="8dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boarders"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Date: "
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/oh_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Fri, 01 Oct 2021"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/total_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="R 20000000000"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/NoItems_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="21"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text=" Item(s) "
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/NoItems_id"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight=".2"-->
+<!--                    android:text="21"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight=".2"-->
+<!--                    android:text=" Item(s) "-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp"/>-->
+
+<!--                -->
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/address_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="end"
+                    android:text="123 ABC, Johannesburg 2001"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
